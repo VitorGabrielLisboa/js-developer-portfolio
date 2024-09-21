@@ -1,28 +1,15 @@
-.experience {
-    display: flex;
-    flex-direction: column;
+.experience{
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.experience li {
-    margin-bottom: 1rem;
-}
-
-.experience li .period {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 }
 
-.experience li .period::before {
-    content: "";
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('/assets/img/icons/calendar.svg');
-    margin-right: .5rem;
+.experience li{
+    margin: .5rem 2.5rem;
+}
+
+.experience i{
+    margin-right: 5px;
 }

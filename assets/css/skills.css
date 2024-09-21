@@ -1,42 +1,62 @@
-.skills {
+.skills{
     display: flex;
     flex-direction: column;
 }
-
-.skills .tools ul {
+.skills h3,
+.personal ul{
+    margin: .5rem 2.5rem;
+}
+.skills .tools,
+.skills .personal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills .tools ul{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
     list-style: none;
+    width: 200px;
 }
 
-.skills .tools ul li img {
-    max-width: 50px;
-    margin: 0 .5rem;
+.skills .tools i{
+    font-size: 4rem;
+    margin: .5rem .5rem;
 }
 
-.skills .personal ul {
+.skills .personal ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
 }
 
-.skills .personal ul li {
+.skills .personal ul li{
     margin-left: 2rem;
-    padding: .5rem
+    padding: .5rem;
 }
-
-@media only screen and (min-width: 768px) {
-    .skills {
+@media only screen and (min-width: 480px){
+    .skills .personal ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 1.5rem
+    }
+}
+@media only screen and (min-width: 768px){
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .skills .personal ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem
+    }
+    .skills .personal ul li{
+        margin: 0;
     }
 }
